@@ -1,162 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Astro Studios™</title>
-  <style>
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #000000;
-      --accent-color: #4f46e5;
-    }
-
-    [data-theme="dark"] {
-      --bg-color: #111827;
-      --text-color: #f3f4f6;
-      --accent-color: #818cf8;
-    }
-
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: all 0.3s ease;
-    }
-
-    header, footer {
-      background: var(--accent-color);
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 1rem 0;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .game-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-
-    .game-card {
-      background: var(--accent-color);
-      color: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    .lang-selector, .theme-toggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: var(--accent-color);
-      color: #fff;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .theme-toggle {
-      top: 3.5rem;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <button class="lang-selector" onclick="changeLanguage()">🌐</button>
-  <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
   <header>
-    <h1>Astro Studios™</h1>
-    <p>Desarrolladores indie creando experiencias únicas</p>
+    <nav class="navbar">
+      <div class="logo">Astro Studios™</div>
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="home">Inicio</a></li>
+        <li><a href="#about" data-i18n="about">El Estudio</a></li>
+        <li><a href="#games" data-i18n="games">Nuestros Juegos</a></li>
+        <li><a href="#blog" data-i18n="blog">Noticias</a></li>
+        <li><a href="#reviews" data-i18n="reviews">Reseñas</a></li>
+        <li><a href="#contact" data-i18n="contact">Contacto</a></li>
+        <li class="lang-selector">
+          <select id="language">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+            <option value="pt">PT</option>
+            <option value="ru">RU</option>
+          </select>
+        </li>
+        <li><button id="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#juegos">Juegos</a>
-    <a href="#blog">Blog</a>
-    <a href="#resenas">Reseñas</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+  <main>
+    <section id="home" class="hero">
+      <h1 data-i18n="welcome">Bienvenidos a Astro Studios™</h1>
+      <p data-i18n="intro">Un pequeño equipo indie creando experiencias inolvidables</p>
+      <div class="carousel">
+        <img src="once2.jpg" alt="Once 2">
+        <img src="una_noite.jpg" alt="Una Noite com Eduado">
+        <img src="taptap.jpg" alt="Tap Tap">
+        <img src="snappix.jpg" alt="Snappix">
+        <img src="the_button.jpg" alt="The Button Game">
+      </div>
+    </section>
 
-  <section id="inicio">
-    <h2>Bienvenidos a Astro Studios™</h2>
-    <p>Somos un equipo de 2 desarrolladores apasionados por los videojuegos.</p>
-    <img src="https://via.placeholder.com/800x300" alt="Carrusel de juegos" style="width:100%; border-radius: 8px;" />
-  </section>
+    <section id="about">
+      <h2 data-i18n="about">Sobre Nosotros</h2>
+      <p data-i18n="about-text">Somos dos desarrolladores apasionados creando mundos únicos desde Astro Studios™. Nos especializamos en ideas innovadoras y jugabilidad emocional.</p>
+    </section>
 
-  <section id="juegos">
-    <h2>Nuestros Juegos</h2>
-    <div class="game-grid">
-      <div class="game-card">Once 2</div>
-      <div class="game-card">Una Noite com Eduado</div>
-      <div class="game-card">Tap Tap</div>
-      <div class="game-card">Snappix</div>
-      <div class="game-card">The Button Game</div>
-    </div>
-  </section>
+    <section id="games">
+      <h2 data-i18n="games">Nuestros Juegos</h2>
+      <div class="games-grid">
+        <div class="game">
+          <img src="once2.jpg" alt="Once 2">
+          <h3>Once 2</h3>
+          <p data-i18n="once-desc">Una secuela surrealista de aventuras narrativas intensas.</p>
+        </div>
+        <div class="game">
+          <img src="una_noite.jpg" alt="Una Noite com Eduado">
+          <h3>Una Noite com Eduado</h3>
+          <p data-i18n="eduado-desc">Un thriller psicológico en una noche inolvidable.</p>
+        </div>
+        <div class="game">
+          <img src="taptap.jpg" alt="Tap Tap">
+          <h3>Tap Tap</h3>
+          <p data-i18n="tap-desc">Juego de ritmo adictivo con una estética minimalista.</p>
+        </div>
+        <div class="game">
+          <img src="snappix.jpg" alt="Snappix">
+          <h3>Snappix</h3>
+          <p data-i18n="snappix-desc">Captura mundos en pixeles. Aventura creativa y visual.</p>
+        </div>
+        <div class="game">
+          <img src="the_button.jpg" alt="The Button Game">
+          <h3>The Button Game</h3>
+          <p data-i18n="button-desc">Un experimento interactivo que desafía al jugador.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="blog">
-    <h2>Blog / Noticias</h2>
-    <p>Compartimos avances, ideas y anécdotas del desarrollo indie.</p>
-  </section>
+    <section id="blog">
+      <h2 data-i18n="blog">Blog y Noticias</h2>
+      <div class="blog-posts">
+        <article>
+          <h3>Devlog #1</h3>
+          <p>Comenzamos con Once 2: nuevas mecánicas y dirección artística...</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="resenas">
-    <h2>Reseñas</h2>
-    <p>"Una joya indie inesperada" - Jugador X</p>
-    <p>"Tap Tap es adictivo y divertido" - Blog Gamer Y</p>
-  </section>
+    <section id="reviews">
+      <h2 data-i18n="reviews">Reseñas</h2>
+      <blockquote>“Una Noite com Eduado es una experiencia emocional como ninguna otra.” - Revista IndieX</blockquote>
+      <blockquote>“El ritmo de Tap Tap me atrapó por horas.” - Jugador anónimo</blockquote>
+    </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form>
-      <input type="text" placeholder="Tu nombre" required />
-      <input type="email" placeholder="Tu correo" required />
-      <textarea placeholder="Mensaje" rows="4" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p>Redes Sociales:</p>
-    <ul>
-      <li><a href="#">Twitter / X</a></li>
-      <li><a href="#">YouTube</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Bluesky</a></li>
-    </ul>
-  </section>
+    <section id="contact">
+      <h2 data-i18n="contact">Contacto</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="socials">
+        <a href="#">X</a>
+        <a href="#">YouTube</a>
+        <a href="#">Instagram</a>
+        <a href="#">Bluesky</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Astro Studios™. Todos los derechos reservados.</p>
+    <nav class="footer-nav">
+      <a href="#home">Inicio</a>
+      <a href="#about">Estudio</a>
+      <a href="#games">Juegos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
   </footer>
-
-  <script>
-    function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      document.documentElement.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
-    }
-
-    function changeLanguage() {
-      alert('Soporte multilenguaje en construcción. Idiomas: Español, Inglés, Portugués, Ruso.');
-    }
-  </script>
 </body>
 </html>
