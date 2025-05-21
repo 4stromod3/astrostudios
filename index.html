@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astro Studios™</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --accent-color: #4f46e5;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #111827;
+      --text-color: #f3f4f6;
+      --accent-color: #818cf8;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+
+    header, footer {
+      background: var(--accent-color);
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .game-card {
+      background: var(--accent-color);
+      color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .lang-selector, .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent-color);
+      color: #fff;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .theme-toggle {
+      top: 3.5rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <button class="lang-selector" onclick="changeLanguage()">🌐</button>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+  <header>
+    <h1>Astro Studios™</h1>
+    <p>Desarrolladores indie creando experiencias únicas</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#juegos">Juegos</a>
+    <a href="#blog">Blog</a>
+    <a href="#resenas">Reseñas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenidos a Astro Studios™</h2>
+    <p>Somos un equipo de 2 desarrolladores apasionados por los videojuegos.</p>
+    <img src="https://via.placeholder.com/800x300" alt="Carrusel de juegos" style="width:100%; border-radius: 8px;" />
+  </section>
+
+  <section id="juegos">
+    <h2>Nuestros Juegos</h2>
+    <div class="game-grid">
+      <div class="game-card">Once 2</div>
+      <div class="game-card">Una Noite com Eduado</div>
+      <div class="game-card">Tap Tap</div>
+      <div class="game-card">Snappix</div>
+      <div class="game-card">The Button Game</div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog / Noticias</h2>
+    <p>Compartimos avances, ideas y anécdotas del desarrollo indie.</p>
+  </section>
+
+  <section id="resenas">
+    <h2>Reseñas</h2>
+    <p>"Una joya indie inesperada" - Jugador X</p>
+    <p>"Tap Tap es adictivo y divertido" - Blog Gamer Y</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Redes Sociales:</p>
+    <ul>
+      <li><a href="#">Twitter / X</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Bluesky</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Astro Studios™. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
+    }
+
+    function changeLanguage() {
+      alert('Soporte multilenguaje en construcción. Idiomas: Español, Inglés, Portugués, Ruso.');
+    }
+  </script>
+</body>
+</html>
