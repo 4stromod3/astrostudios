@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "games": "Games",
+    "blog": "Blog",
+    "reviews": "Reviews",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": {
+      "we": "We Create",
+      "unique": "Unique",
+      "gaming": "Gaming",
+      "experiences": "Experiences"
+    },
+    "subtitle": "A passionate indie game studio dedicated to crafting memorable and innovative games that captivate players.",
+    "cta": {
+      "games": "Our Games",
+      "contact": "Get in Touch"
+    },
+    "latest": "Latest Release"
+  },
+  "about": {
+    "title": "About Astro Studios",
+    "subtitle": "Two passionate creators building worlds of imagination.",
+    "paragraph1": "Founded with a shared love for creating unique gaming experiences, Astro Studios is a small but dedicated indie game development team. We're just two people, but our passion drives us to create games that stand out and leave a lasting impression.",
+    "paragraph2": "We believe in pushing creative boundaries while keeping our games accessible and enjoyable. From puzzle games to narrative adventures, our diverse portfolio reflects our versatility and commitment to quality.",
+    "paragraph3": "Each game we create is a labor of love, crafted with attention to detail and a desire to bring something new to the gaming world.",
+    "stats": {
+      "games": "Games Released",
+      "team": "Team Members",
+      "languages": "Languages",
+      "creativity": "Creativity"
+    }
+  },
+  "games": {
+    "title": "Our Games",
+    "subtitle": "Discover our portfolio of unique indie titles",
+    "learnMore": "Learn more"
+  },
+  "blog": {
+    "title": "Latest News",
+    "subtitle": "Updates from our development journey",
+    "pageTitle": "Blog & News",
+    "pageSubtitle": "Stay updated with our latest development stories and announcements",
+    "viewAll": "View All Posts",
+    "readMore": "Read more",
+    "noPosts": "No blog posts found. Check back soon!"
+  },
+  "reviews": {
+    "title": "What Players Say",
+    "subtitle": "Feedback from our amazing community"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you!",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "selectSubject": "Select a subject",
+      "subjects": {
+        "general": "General Inquiry",
+        "support": "Game Support",
+        "business": "Business Opportunity",
+        "press": "Press Inquiry"
+      },
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending..."
+    },
+    "success": {
+      "title": "Message Sent",
+      "message": "Thanks for reaching out! We'll get back to you as soon as possible."
+    },
+    "error": {
+      "title": "Error",
+      "message": "There was a problem sending your message. Please try again."
+    },
+    "connect": {
+      "title": "Connect With Us"
+    },
+    "faq": {
+      "title": "Visit Our FAQ",
+      "description": "Find answers to commonly asked questions about our games and studio.",
+      "link": "Read FAQ"
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Subscribe to get updates on our latest games and exclusive offers.",
+    "placeholder": "Your email",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "success": {
+      "title": "Subscribed!",
+      "message": "You've been successfully subscribed to our newsletter."
+    },
+    "error": {
+      "title": "Error",
+      "message": "Failed to subscribe. Please try again.",
+      "validation": "Please enter a valid email address."
+    }
+  },
+  "footer": {
+    "tagline": "Creating unique gaming experiences with passion and creativity.",
+    "navigation": "Navigation",
+    "games": "Games",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "gdpr": "GDPR Compliance",
+    "rights": "All rights reserved."
+  },
+  "game": {
+    "backToGames": "Back to Games",
+    "playNow": "Play Now",
+    "reviews": "Player Reviews",
+    "noReviews": "No reviews yet for this game.",
+    "exploreOtherGames": "Explore Other Games",
+    "notFound": {
+      "title": "Game Not Found",
+      "message": "Sorry, we couldn't find the game you're looking for.",
+      "backToGames": "Back to Games"
+    }
+  },
+  "blogPost": {
+    "backToBlog": "Back to Blog",
+    "readMorePosts": "Read More Posts",
+    "notFound": {
+      "title": "Post Not Found",
+      "message": "Sorry, we couldn't find the blog post you're looking for.",
+      "backToBlog": "Back to Blog"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Astro Studios™ - Indie Game Development",
+      "description": "A passionate indie game development studio creating unique and memorable gaming experiences."
+    },
+    "game": {
+      "title": "Game - Astro Studios™",
+      "description": "Explore our indie game creations with innovative gameplay and captivating experiences."
+    },
+    "blog": {
+      "title": "Blog - Astro Studios™",
+      "description": "Latest news, development updates, and insights from the Astro Studios indie game development team."
+    },
+    "blogPost": {
+      "title": "Blog Post - Astro Studios™",
+      "description": "Read our latest development update and insights from the Astro Studios team."
+    }
+  }
+}

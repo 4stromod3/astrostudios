@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "games": "Jogos",
+    "blog": "Blog",
+    "reviews": "Avaliações",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": {
+      "we": "Criamos",
+      "unique": "Experiências",
+      "gaming": "de Jogos",
+      "experiences": "Únicas"
+    },
+    "subtitle": "Um estúdio indie apaixonado dedicado a criar jogos memoráveis e inovadores que cativam os jogadores.",
+    "cta": {
+      "games": "Nossos Jogos",
+      "contact": "Entre em Contato"
+    },
+    "latest": "Lançamento Mais Recente"
+  },
+  "about": {
+    "title": "Sobre a Astro Studios",
+    "subtitle": "Dois criadores apaixonados construindo mundos de imaginação.",
+    "paragraph1": "Fundada com um amor compartilhado por criar experiências únicas de jogos, a Astro Studios é uma pequena mas dedicada equipe de desenvolvimento de jogos indie. Somos apenas duas pessoas, mas nossa paixão nos impulsiona a criar jogos que se destacam e deixam uma impressão duradoura.",
+    "paragraph2": "Acreditamos em ultrapassar fronteiras criativas enquanto mantemos nossos jogos acessíveis e divertidos. De jogos de quebra-cabeça a aventuras narrativas, nosso portfólio diversificado reflete nossa versatilidade e compromisso com a qualidade.",
+    "paragraph3": "Cada jogo que criamos é um trabalho de amor, elaborado com atenção aos detalhes e o desejo de trazer algo novo para o mundo dos jogos.",
+    "stats": {
+      "games": "Jogos Lançados",
+      "team": "Membros da Equipe",
+      "languages": "Idiomas",
+      "creativity": "Criatividade"
+    }
+  },
+  "games": {
+    "title": "Nossos Jogos",
+    "subtitle": "Descubra nosso portfólio de títulos indie únicos",
+    "learnMore": "Saiba mais"
+  },
+  "blog": {
+    "title": "Últimas Notícias",
+    "subtitle": "Atualizações da nossa jornada de desenvolvimento",
+    "pageTitle": "Blog e Notícias",
+    "pageSubtitle": "Fique atualizado com nossas histórias e anúncios de desenvolvimento mais recentes",
+    "viewAll": "Ver Todos os Posts",
+    "readMore": "Leia mais",
+    "noPosts": "Nenhum post de blog encontrado. Volte em breve!"
+  },
+  "reviews": {
+    "title": "O Que os Jogadores Dizem",
+    "subtitle": "Feedback da nossa incrível comunidade"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Adoraríamos ouvir de você!",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "subject": "Assunto",
+      "selectSubject": "Selecione um assunto",
+      "subjects": {
+        "general": "Consulta Geral",
+        "support": "Suporte de Jogo",
+        "business": "Oportunidade de Negócios",
+        "press": "Consulta de Imprensa"
+      },
+      "message": "Mensagem",
+      "send": "Enviar Mensagem",
+      "sending": "Enviando..."
+    },
+    "success": {
+      "title": "Mensagem Enviada",
+      "message": "Obrigado por entrar em contato! Responderemos o mais breve possível."
+    },
+    "error": {
+      "title": "Erro",
+      "message": "Houve um problema ao enviar sua mensagem. Por favor, tente novamente."
+    },
+    "connect": {
+      "title": "Conecte-se Conosco"
+    },
+    "faq": {
+      "title": "Visite Nosso FAQ",
+      "description": "Encontre respostas para perguntas frequentes sobre nossos jogos e estúdio.",
+      "link": "Leia o FAQ"
+    }
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Inscreva-se para receber atualizações sobre nossos últimos jogos e ofertas exclusivas.",
+    "placeholder": "Seu email",
+    "subscribe": "Inscrever-se",
+    "subscribing": "Inscrevendo...",
+    "success": {
+      "title": "Inscrito!",
+      "message": "Você foi inscrito com sucesso em nossa newsletter."
+    },
+    "error": {
+      "title": "Erro",
+      "message": "Falha ao se inscrever. Por favor, tente novamente.",
+      "validation": "Por favor, insira um endereço de email válido."
+    }
+  },
+  "footer": {
+    "tagline": "Criando experiências únicas de jogos com paixão e criatividade.",
+    "navigation": "Navegação",
+    "games": "Jogos",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "cookies": "Política de Cookies",
+    "gdpr": "Conformidade com GDPR",
+    "rights": "Todos os direitos reservados."
+  },
+  "game": {
+    "backToGames": "Voltar para Jogos",
+    "playNow": "Jogar Agora",
+    "reviews": "Avaliações dos Jogadores",
+    "noReviews": "Ainda não há avaliações para este jogo.",
+    "exploreOtherGames": "Explorar Outros Jogos",
+    "notFound": {
+      "title": "Jogo Não Encontrado",
+      "message": "Desculpe, não conseguimos encontrar o jogo que você está procurando.",
+      "backToGames": "Voltar para Jogos"
+    }
+  },
+  "blogPost": {
+    "backToBlog": "Voltar para o Blog",
+    "readMorePosts": "Ler Mais Posts",
+    "notFound": {
+      "title": "Post Não Encontrado",
+      "message": "Desculpe, não conseguimos encontrar o post de blog que você está procurando.",
+      "backToBlog": "Voltar para o Blog"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Astro Studios™ - Desenvolvimento de Jogos Indie",
+      "description": "Um estúdio apaixonado de desenvolvimento de jogos indie criando experiências únicas e memoráveis de jogos."
+    },
+    "game": {
+      "title": "Jogo - Astro Studios™",
+      "description": "Explore nossas criações de jogos indie com jogabilidade inovadora e experiências cativantes."
+    },
+    "blog": {
+      "title": "Blog - Astro Studios™",
+      "description": "Últimas notícias, atualizações de desenvolvimento e insights da equipe de desenvolvimento de jogos indie Astro Studios."
+    },
+    "blogPost": {
+      "title": "Post de Blog - Astro Studios™",
+      "description": "Leia nossa atualização mais recente de desenvolvimento e insights da equipe Astro Studios."
+    }
+  }
+}
